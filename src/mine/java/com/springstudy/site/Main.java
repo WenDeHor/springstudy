@@ -1,4 +1,4 @@
-package com.springstudy.site;
+package java.com.springstudy.site;
 
 public class Main {
     public static void main(String[] args) {
