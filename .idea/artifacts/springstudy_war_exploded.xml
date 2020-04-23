@@ -6,6 +6,14 @@
         <element id="directory" name="classes">
           <element id="module-output" name="springstudy" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="javax.servlet-api-4.0.1" />
+          <element id="library" level="project" name="jstl-1.2" />
+          <element id="library" level="project" name="logback-core-1.2.3" />
+          <element id="library" level="project" name="logback-classic-1.2.3" />
+          <element id="library" level="project" name="jcl-over-slf4j-1.7.28" />
+          <element id="library" level="project" name="slf4j-api-1.7.28" />
+        </element>
       </element>
       <element id="javaee-facet-resources" facet="springstudy/web/Web" />
     </root>
