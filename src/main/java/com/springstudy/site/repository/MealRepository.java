@@ -2,15 +2,23 @@ package com.springstudy.site.repository;
 
 import com.springstudy.site.model.Meal;
 
-import java.util.Collection;
+import java.time.LocalDateTime;
+import java.util.List;
 
 public interface MealRepository {
+    // null if updated meal do not belong to userId
+    Meal save(Meal meal, int userId);
 
-    Meal save(Meal meal);
+    // false if meal do not belong to userId
+    boolean delete(int id, int userId);
 
-    boolean delete(int id);
+    // null if meal do not belong to userId
+    Meal get(int id, int userId);
 
-    Meal get(int id);
+    // ORDERED dateTime desc
+    List<Meal> getAll(int userId);
 
-    Collection<Meal> getAll();
+    // ORDERED dateTime desc
+    List<Meal> getBetween(LocalDateTime startDate, LocalDateTime endDate, int userId);
 }
+
